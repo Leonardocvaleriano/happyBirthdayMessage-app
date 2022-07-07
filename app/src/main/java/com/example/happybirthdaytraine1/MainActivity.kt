@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         firstText.text = "I'm glad it's your birthday, I hope you have a wonderful birthday!"
 
         val secondText = findViewById<TextView>(R.id.secondText)
-        secondText.text = "I wish you all the best on your special day..."
+        secondText.text = "I wish you all the best on your special day."
 
         val fourtyText = findViewById<TextView>(R.id.thirdText)
-        fourtyText.text = "I love u"
+        fourtyText.text = "I love u..."
 
         val endText = findViewById<TextView>(R.id.endText)
         endText.text = "From Leo."
