@@ -12,15 +12,15 @@ class MainActivity : AppCompatActivity() {
 
 
         val title = findViewById<TextView>(R.id.title)
-        title.text = "Happy Birthday Léo!"
+        title.text = "Happy Birthday!"
 
         val firstText = findViewById<TextView>(R.id.firstText)
-        firstText.text = "I would like to wish u a happy Birthday... Also i want u to know that I'll stay by ur side forever."
+        firstText.text = "I'm glad it's your birthday, I hope you have a wonderful birthday!"
 
         val secondText = findViewById<TextView>(R.id.secondText)
-        secondText.text = "Don't forget, I'm always be here for you, my Dear Léo. Btw, you look awesome today..."
+        secondText.text = "I wish you all the best on your special day..."
 
-        val fourtyText = findViewById<TextView>(R.id.fourtyText)
+        val fourtyText = findViewById<TextView>(R.id.thirdText)
         fourtyText.text = "I love u"
 
         val endText = findViewById<TextView>(R.id.endText)

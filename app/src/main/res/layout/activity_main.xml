@@ -7,76 +7,99 @@
     tools:context=".MainActivity">
 
 
-
     <ImageView
         android:id="@+id/background"
-        app:srcCompat="@drawable/androidparty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:scaleType="centerCrop"
-        >
-    </ImageView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/androidparty"></ImageView>
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:layout_marginTop="35dp"
         android:fontFamily="casual"
-        tools:text="Happy Birthday Léo!"
+        android:shadowColor="@color/purple_200"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="15"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        />
+        tools:text="Happy Birthday!" />
 
     <TextView
         android:id="@+id/firstText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintStart_toStartOf="@+id/title"
-        app:layout_constraintEnd_toEndOf="@+id/title"
-
-        tools:text="I would like to wish u a happy Birthday...Also i want u to know that I'll stay by ur side forever."
-        />
-
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintVertical_bias="0.052"
+        tools:text="I'm glad it's your birthday, I hope you have a wonderful birthday!" />
 
     <TextView
         android:id="@+id/secondText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/fourtyText"
-        app:layout_constraintEnd_toEndOf="@id/firstText"
-        android:layout_margin="40dp"
-        tools:text="Don't forget, I'm always be here for you, my Dear Léo.Btw, you look awesome today..." />
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstText"
+        app:layout_constraintVertical_bias="0.599"
+
+        tools:text="I wish you all the best on your special day..." />
+
 
     <TextView
-        android:id="@+id/fourtyText"
+        android:id="@+id/thirdText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/endText"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="40dp"
-
+        app:layout_constraintTop_toBottomOf="@+id/secondText"
         tools:text="I love u." />
 
     <TextView
         android:id="@+id/endText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:textSize="30sp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="casual"
+        android:shadowColor="@color/purple_200"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="15"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,9 +107,6 @@
 
 
         ></TextView>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
